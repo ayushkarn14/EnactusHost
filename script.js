@@ -37,6 +37,8 @@ observerourstory.observe(document.querySelector("#ourstory"));
 var observerachievements = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
         console.log('Achievements');
+        document.getElementById("carouselExampleControls").style.display = "block";
+        document.getElementById("carouselExampleControls").style.animation = "fadeInAnimation ease 1.5s";
         document.getElementById("achievementsnav").style.borderBottom = "3px solid #ffc107";
         document.getElementById("homenav").style.borderBottom = "0px";
         document.getElementById("ourstorynav").style.borderBottom = "0px";
