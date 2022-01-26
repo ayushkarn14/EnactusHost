@@ -1,414 +1,512 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Vidaloka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Vidaloka&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    100% {
-        opacity: 1;
+    
+    @keyframes enlarge {
+        from {
+            font-size: 300%;
+        }
+        to {
+            font-size: 500%;
+        }
     }
-}
-
-@keyframes enlarge {
-    from {
-        font-size: 300%;
+    
+    @keyframes underline {
+        from {
+            border-bottom: 3px #ffc107 solid;
+            border-width: 0px;
+        }
+        to {
+            border-bottom: 1.5px #ffc107 solid;
+        }
     }
-    to {
-        font-size: 500%;
+    
+    * {
+        scroll-behavior: smooth;
     }
-}
-
-@keyframes underline {
-    from {
-        border-bottom: 3px #ffc107 solid;
-        border-width: 0px;
+    
+    .chngtopop {
+        font-family: 'Poppins', sans-serif;
     }
-    to {
-        border-bottom: 1.5px #ffc107 solid;
+    
+    .navbar {
+        border-bottom: 1.2px solid #000;
     }
-}
-
-* {
-    scroll-behavior: smooth;
-}
-
-.chngtopop {
-    font-family: 'Poppins', sans-serif;
-}
-
-.navbar {
-    border-bottom: 1.2px solid #000;
-}
-
-.nav-link {
-    font-size: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-.logo {
-    margin-right: 40px;
-}
-
-#welcome {
-    font-family: 'Poppins', 'sans-serif';
-    font-size: 150%;
-    padding-left: 5%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-    margin-top: 5%;
-}
-
-#name {
-    padding-top: 0%;
-    font-family: 'Vidaloka', serif;
-    font-size: 500%;
-    padding-left: 5%;
-    animation-name: enlarge;
-    animation-duration: 2s;
-}
-
-#intro {
-    width: 400px;
-    padding-left: 5%;
-    font-size: 80%;
-    color: #000;
-}
-
-.btn-warning {
-    border-radius: 23px;
-    width: 150px;
-    margin-left: 5%;
-}
-
-.setheight {
-    height: 100vh;
-    overflow: hidden;
-}
-
-#banner {
-    transform: rotate(339deg);
-    z-index: -1;
-    position: relative;
-    top: -240px;
-    left: 20px;
-    height: auto;
-    width: 120%;
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.our {
-    font-family: 'Vidaloka', serif;
-    font-size: 350%;
-    padding: 8%;
-}
-
-#subscribe {
-    font-family: 'Vidaloka', serif;
-    font-size: 150%;
-    padding-left: 8%;
-    width: 320px;
-}
-
-.ourjumbo {
-    padding-bottom: 0px;
-    margin-bottom: 0%;
-}
-
-.form-group {
-    padding-left: 13%;
-    padding-top: 25px;
-    width: 70%
-}
-
-.form-control {
-    border-radius: 0%;
-    border-width: 1.5px;
-}
-
-.newssubmit {
-    margin-left: 25%;
-    margin-top: 5%;
-}
-
-.newspic1 {
-    position: relative;
-    top: 15vh;
-    left: 8vh;
-    margin: 0%;
-    width: 57%;
-    padding: 0%;
-    box-shadow: 5px 5px 8px grey;
-}
-
-.newspic2 {
-    display: none;
-}
-
-.sns {
-    width: 65px;
-    margin: 10px 20px 10px 20px;
-}
-
-#snsdiv {
-    margin-left: 65px;
-}
-
-.nav-link:hover {
-    animation: underline forwards 0.2s;
-}
-
-#contact_form {
-    padding-top: 120px;
-}
-
-.contactsubmit {
-    margin-left: 200px;
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
-}
-
-#footer {
-    position: absolute;
-    top: 790vh;
-    background-color: #efeeee;
-    text-align: center;
-    padding: 4vh;
-    font-family: 'Vidaloka', serif;
-}
-
-.storyp {
-    padding-left: 10%;
-    font-size: 170%;
-    color: #000;
-}
-
-.yellowstory {
-    color: #fec61b;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.storycard {
-    display: none;
-    background-color: #fec61b;
-    width: 16vw;
-    height: 70vh;
-    margin: 20vh 5vh 0vh 5vh;
-    float: left;
-    padding: 20px;
-}
-
-.storypic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    margin-top: 15px;
-}
-
-.visionmission {
-    font-weight: bolder;
-    text-align: center;
-    font-size: 170%;
-    margin-top: 30px;
-}
-
-.visionmission_des {
-    color: #ffffff;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 115%;
-}
-
-.story {
-    padding: 8%;
-}
-
-#storyfooter {
-    z-index: -1;
-    position: absolute;
-    top: 178vh;
-    height: 29vh;
-    background-color: #efeeee;
-    text-align: center;
-    padding: 4vh;
-    font-family: 'Vidaloka', serif;
-}
-
-#storyfooterp {
-    width: 400px;
-    text-align: left;
-    margin-left: 70px;
-}
-
-@media only screen and (max-width: 858px) {
-    #welcome {
-        margin-top: 30%;
-    }
-    #banner {
-        top: 0px;
-        left: -40px;
-        width: 150%;
-    }
-    .newspic1 {
-        display: none;
-    }
-    .newspic2 {
-        margin: 0%;
-        padding: 0%;
-        padding-top: 10%;
-        display: block;
-        max-width: 100%;
-        max-height: 100vh;
-        margin: auto;
-    }
-    #contact_form {
-        padding-top: 100px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    #welcome {
-        margin-top: 20%;
-    }
-    #banner {
-        top: 0px;
-        left: -50px;
-        width: 200%;
-    }
-    .ourjumbo {
-        margin-top: 10%;
-    }
-    #subscribe {
-        font-family: 'Vidaloka', serif;
-        font-size: 150%;
-        padding-left: 8%;
-        width: 320px;
-        position: relative;
-        top: -30px;
-    }
-    #snsdiv {
+    
+    .nav-link {
+        font-size: 100%;
         margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        margin-top: 10px;
     }
-    .contactsubmit {
-        margin-left: 80px;
-        margin-top: 30px;
-        width: 200px;
-        height: 50px;
+    
+    .logo {
+        margin-right: 40px;
     }
-    #contact_form {
-        padding-top: 0px;
-    }
-    .ourcontact {
-        margin: 0%;
-        padding-top: 5%;
-    }
-    .story {
-        padding: 0%;
-        padding-top: 5%;
-    }
-    .storycard {
-        background-color: #fec61b;
-        width: 40vw;
-        height: 50vh;
-        float: left;
-        padding: 0px;
-        margin: 0px;
-    }
-    .visionmission {
-        font-size: 150%;
-        margin-top: 20px;
-    }
-    .mission {
-        margin-left: 5vh;
-    }
-    .visionmission_des {
-        font-size: 100%;
-    }
-    .storyp {
-        font-size: 140%;
-    }
-    #storyfooter {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 376px) {
-    .our {
-        font-size: 200%;
-    }
-    #name {
-        font-size: 250%;
-    }
-    #intro {
-        width: 80vw;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
+    
     #welcome {
-        margin-top: 20%;
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 150%;
+        padding-left: 5%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        margin-top: 5%;
     }
-    .ourjumbo {
-        margin-top: 10%;
+    
+    #name {
+        padding-top: 0%;
+        font-family: 'Vidaloka', serif;
+        font-size: 500%;
+        padding-left: 5%;
+        animation-name: enlarge;
+        animation-duration: 2s;
     }
+    
+    #intro {
+        width: 400px;
+        padding-left: 5%;
+        font-size: 80%;
+        color: #000;
+    }
+    
+    .btn-warning {
+        border-radius: 23px;
+        width: 150px;
+        margin-left: 5%;
+    }
+    
+    .setheight {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    #banner {
+        transform: rotate(339deg);
+        z-index: -1;
+        position: relative;
+        top: -240px;
+        left: 20px;
+        height: auto;
+        width: 120%;
+        animation: fadeInAnimation ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    .our {
+        font-family: 'Vidaloka', serif;
+        font-size: 350%;
+        padding: 8%;
+    }
+    
     #subscribe {
         font-family: 'Vidaloka', serif;
-        font-size: 120%;
+        font-size: 150%;
         padding-left: 8%;
-        margin-bottom: 0%;
-        padding-bottom: 0%;
         width: 320px;
+    }
+    
+    .ourjumbo {
+        padding-bottom: 0px;
+        margin-bottom: 0%;
+    }
+    
+    .form-group {
+        padding-left: 13%;
+        padding-top: 25px;
+        width: 70%
+    }
+    
+    .form-control {
+        border-radius: 0%;
+        border-width: 1.5px;
+    }
+    
+    .newssubmit {
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    
+    .newspic1 {
         position: relative;
-        top: -30px;
+        top: 15vh;
+        left: 8vh;
+        margin: 0%;
+        width: 57%;
+        padding: 0%;
+        box-shadow: 5px 5px 8px grey;
     }
+    
+    .newspic2 {
+        display: none;
+    }
+    
     .sns {
-        width: 10vw;
+        width: 65px;
+        margin: 10px 20px 10px 20px;
     }
+    
+    #snsdiv {
+        margin-left: 65px;
+    }
+    
+    .nav-link:hover {
+        animation: underline forwards 0.2s;
+    }
+    
+    #contact_form {
+        padding-top: 120px;
+    }
+    
     .contactsubmit {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 200px;
         margin-top: 30px;
         width: 200px;
         height: 50px;
     }
-    #contact_form {
-        padding-top: 0px;
+    
+    #footer {
+        position: absolute;
+        top: 790vh;
+        background-color: #efeeee;
+        text-align: center;
+        padding: 4vh;
+        font-family: 'Vidaloka', serif;
     }
-    .ourcontact {
-        margin: 0%;
-        padding-top: 5%;
-    }
-    .story {
-        padding: 0%;
-        padding-top: 5%;
-    }
-    .visionmission {
-        font-size: 120%;
-        margin-top: 20px;
-    }
-    .visionmission_des {
-        font-size: 80%;
-    }
+    
     .storyp {
-        font-size: 100%;
+        padding-left: 10%;
+        font-size: 170%;
+        color: #000;
     }
-    #storyfooter {
+    
+    .yellowstory {
+        color: #fec61b;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .storycard {
         display: none;
+        background-color: #fec61b;
+        width: 16vw;
+        height: 70vh;
+        margin: 20vh 5vh 0vh 5vh;
+        float: left;
+        padding: 20px;
     }
-    .form-group {
-        margin: 0%;
+    
+    .storypic {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 2%;
+        width: 60%;
+        margin-top: 15px;
     }
-}
+    
+    .visionmission {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 170%;
+        margin-top: 30px;
+    }
+    
+    .visionmission_des {
+        color: #ffffff;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 115%;
+    }
+    
+    .story {
+        padding: 8%;
+    }
+    
+    #storyfooter {
+        z-index: -1;
+        position: absolute;
+        top: 178vh;
+        height: 29vh;
+        background-color: #efeeee;
+        text-align: center;
+        padding: 4vh;
+        font-family: 'Vidaloka', serif;
+    }
+    
+    #storyfooterp {
+        width: 400px;
+        text-align: left;
+        margin-left: 70px;
+    }
+    
+    .ourachievements {
+        font-family: 'Vidaloka', serif;
+        font-size: 350%;
+        padding: 0%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .slide {
+        width: 50vw;
+        height: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .carouselcard {
+        padding: 20px;
+        background-color: #fec61b;
+        width: 50vw;
+        height: fit-content;
+    }
+    
+    .achievement_card_title {
+        padding: 0%;
+        font-size: 250%;
+        text-align: center;
+    }
+    
+    .achievement_card_img {
+        display: block;
+        height: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .achievement_card_caption {
+        margin-top: 20px;
+        margin-left: 40px;
+        font-weight: bold;
+    }
+    
+    .card-body {
+        background-color: #fec61b;
+    }
+    
+    .readmore {
+        color: black;
+        margin-left: 100px;
+    }
+    
+    .carousel {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 858px) {
+        #welcome {
+            margin-top: 30%;
+        }
+        #banner {
+            top: 0px;
+            left: -40px;
+            width: 150%;
+        }
+        .newspic1 {
+            display: none;
+        }
+        .newspic2 {
+            margin: 0%;
+            padding: 0%;
+            padding-top: 10%;
+            display: block;
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        #contact_form {
+            padding-top: 100px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #welcome {
+            margin-top: 20%;
+        }
+        #banner {
+            top: 0px;
+            left: -50px;
+            width: 200%;
+        }
+        .ourjumbo {
+            margin-top: 10%;
+        }
+        #subscribe {
+            font-family: 'Vidaloka', serif;
+            font-size: 150%;
+            padding-left: 8%;
+            width: 320px;
+            position: relative;
+            top: -30px;
+        }
+        #snsdiv {
+            margin-left: 20px;
+        }
+        .contactsubmit {
+            margin-left: 80px;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+        }
+        #contact_form {
+            padding-top: 0px;
+        }
+        .ourcontact {
+            margin: 0%;
+            padding-top: 5%;
+        }
+        .story {
+            padding: 0%;
+            padding-top: 5%;
+        }
+        .storycard {
+            background-color: #fec61b;
+            width: 40vw;
+            height: 50vh;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+        }
+        .visionmission {
+            font-size: 150%;
+            margin-top: 20px;
+        }
+        .mission {
+            margin-left: 5vh;
+        }
+        .visionmission_des {
+            font-size: 100%;
+        }
+        .storyp {
+            font-size: 140%;
+        }
+        #storyfooter {
+            display: none;
+        }
+        .slide {
+            width: 80vw;
+            height: fit-content;
+        }
+        .carouselcard {
+            padding: 20px;
+            width: 80vw;
+            height: fit-content;
+        }
+        .achievement_card_title {
+            padding: 0%;
+            font-size: 200%;
+            text-align: center;
+        }
+        .achievement_card_img {
+            display: block;
+            height: 18vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .achievement_card_caption {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+        .card-body {
+            font-size: 80%;
+        }
+    }
+    
+    @media only screen and (max-width: 376px) {
+        .our {
+            font-size: 200%;
+        }
+        #name {
+            font-size: 250%;
+        }
+        #intro {
+            width: 80vw;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #welcome {
+            margin-top: 20%;
+        }
+        .ourjumbo {
+            margin-top: 10%;
+        }
+        #subscribe {
+            font-family: 'Vidaloka', serif;
+            font-size: 120%;
+            padding-left: 8%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+            width: 320px;
+            position: relative;
+            top: -30px;
+        }
+        .sns {
+            width: 10vw;
+        }
+        .contactsubmit {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+        }
+        #contact_form {
+            padding-top: 0px;
+        }
+        .ourcontact {
+            margin: 0%;
+            padding-top: 5%;
+        }
+        .story {
+            padding: 0%;
+            padding-top: 5%;
+        }
+        .visionmission {
+            font-size: 120%;
+            margin-top: 20px;
+        }
+        .visionmission_des {
+            font-size: 80%;
+        }
+        .storyp {
+            font-size: 100%;
+        }
+        #storyfooter {
+            display: none;
+        }
+        .form-group {
+            margin: 0%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2%;
+        }
+        .ourachievements {
+            font-size: 200%;
+        }
+        .achievement_card_title {
+            font-size: 150%;
+        }
+        .achievement_card_caption {
+            font-size: 80%;
+        }
+        .card-body {
+            font-size: 60%;
+        }
+        .readmore {
+            font-size: 70%;
+        }
+    }
