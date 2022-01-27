@@ -303,6 +303,54 @@
         display: none;
     }
     
+    .projectsp {
+        font-size: 120%;
+        width: 25vw;
+        margin-left: 14%;
+    }
+    
+    .projectscard {
+        margin-top: 130px;
+        background-color: #fec61b;
+        width: fit-content;
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    
+    .projectstitle {
+        text-align: center;
+        font-size: 200%;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    
+    .mehsoos_logo {
+        padding: 10%;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
+    
+    .mehsoos_des {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 110%;
+        padding: 0%;
+        width: 80%;
+    }
+    
+    .btn-light {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 23px;
+        width: 150px;
+    }
+    
     @media only screen and (max-width: 858px) {
         #welcome {
             margin-top: 30%;
@@ -421,6 +469,28 @@
         .card-body {
             font-size: 80%;
         }
+        .projectsp {
+            font-size: 120%;
+            width: 90vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .projectscard {
+            margin-top: 0%;
+        }
+        .projectsp {
+            font-size: 100%;
+        }
+        .projectstitle {
+            font-size: 150%;
+        }
+        .mehsoos_logo {
+            width: 60%
+        }
+        .mehsoos_des {
+            font-size: 80%;
+        }
     }
     
     @media only screen and (max-width: 376px) {
@@ -507,6 +577,9 @@
             font-size: 60%;
         }
         .readmore {
+            font-size: 70%;
+        }
+        .projectsp {
             font-size: 70%;
         }
     }
