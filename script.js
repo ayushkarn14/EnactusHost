@@ -55,6 +55,8 @@ observerachievements.observe(document.querySelector("#achievements"));
 var observerourprojects = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
         console.log('Our Projects');
+        document.getElementById("projectscardanimation").style.display = "block";
+        document.getElementById("projectscardanimation").style.animation = "fadeInAnimation ease 1.5s";
         document.getElementById("ourprojectsnav").style.borderBottom = "3px solid #ffc107";
         document.getElementById("homenav").style.borderBottom = "0px";
         document.getElementById("ourstorynav").style.borderBottom = "0px";
