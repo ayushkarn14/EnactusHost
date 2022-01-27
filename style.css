@@ -310,6 +310,7 @@
     }
     
     .projectscard {
+        display: none;
         margin-top: 130px;
         background-color: #fec61b;
         width: fit-content;
@@ -478,6 +479,7 @@
         }
         .projectscard {
             margin-top: 0%;
+            display: none;
         }
         .projectsp {
             font-size: 100%;
