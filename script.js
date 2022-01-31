@@ -1,3 +1,6 @@
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
 var observerhome = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
         console.log('Home');
