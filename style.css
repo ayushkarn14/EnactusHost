@@ -28,6 +28,12 @@
         }
     }
     
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     body {
         padding-bottom: 0%;
         margin-bottom: 0%;
@@ -52,6 +58,10 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         margin-top: 10px;
+    }
+    
+    .whitebg {
+        background-color: #ffffff;
     }
     
     .logo {
@@ -102,9 +112,12 @@
     #banner {
         transform: rotate(339deg);
         z-index: -1;
-        position: relative;
+        /* position: relative;
         top: -240px;
-        left: 20px;
+        left: 20px; */
+        position: fixed;
+        top: 400px;
+        left: 0px;
         height: auto;
         width: 120%;
         animation: fadeInAnimation ease 5s;
@@ -206,6 +219,10 @@
         font-family: 'Open Sans', sans-serif;
     }
     
+    .zindexstory {
+        z-index: 3;
+    }
+    
     .storycard {
         display: none;
         background-color: #fec61b;
@@ -244,7 +261,6 @@
     }
     
     #storyfooter {
-        z-index: -1;
         position: absolute;
         top: 178vh;
         height: 29vh;
@@ -291,7 +307,7 @@
     
     .achievement_card_img {
         display: block;
-        height: 220px;
+        height: 250px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -345,6 +361,7 @@
         margin-right: auto;
         padding-top: 0%;
         padding-bottom: 1%;
+        padding-left: 20%;
     }
     
     .mehsoos_des {
@@ -365,30 +382,33 @@
         width: 150px;
     }
     
-    .eventslideimg {
-        height: 400px;
-        width: 400px;
+    .eventsliderow {
+        width: 770px;
+        padding-left: 50px;
     }
     
-    .eventslide {
-        height: 400px;
-        width: 400px;
-        margin-top: 200px;
+    #Eventscarousel {
+        width: 850px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     
-    #eventsp {
+    .eventslideimg {
+        width: 400px;
+        margin-left: 50px;
+    }
+    
+    .eventp {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
         width: 500px;
     }
     
-    .eventjumbop {
-        display: none;
-    }
-    
-    .eventjumbopc {
-        display: block;
+    .readmoreevent {
+        color: #fec61b;
+        text-decoration: none;
     }
     
     .outer {
@@ -476,7 +496,7 @@
         width: 140px;
         position: relative;
         top: -90px;
-        left: 10px;
+        left: 60px;
     }
     
     .nikitaimg {
@@ -577,20 +597,6 @@
         width: 110px;
     }
     
-    .mentorcontact {
-        width: 50px;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    
-    .hide {
-        display: block;
-    }
-    
-    #contact {
-        margin-bottom: 0%;
-    }
-    
     #carouselControls {
         width: 400px;
     }
@@ -609,7 +615,7 @@
         width: 84px;
         position: relative;
         top: -53px;
-        left: 10px;
+        left: 35px;
     }
     
     .nikitaimg_table {
@@ -763,7 +769,7 @@
             margin-top: 30%;
         }
         #banner {
-            top: 0px;
+            top: 700px;
             left: -40px;
             width: 150%;
         }
@@ -812,7 +818,7 @@
             margin-top: 20%;
         }
         #banner {
-            top: 0px;
+            top: 500px;
             left: -50px;
             width: 200%;
         }
@@ -926,15 +932,30 @@
             font-size: 80%;
         }
         .eventslideimg {
-            height: 30vh;
-            width: 30vh;
+            padding: 0%;
+            width: 300px;
+            display: block;
+            margin-left: auto;
+            margin-top: auto;
+        }
+        .eventsliderow {
+            width: 90vw;
+            padding: 0%;
+            margin: 0%;
         }
         .eventslide {
             height: 30vh;
             width: 30vh;
         }
-        #eventsp {
-            font-size: 79%;
+        .eventp {
+            margin: 0%;
+            padding: 0%;
+            margin-top: 20px;
+            font-size: 85%;
+            text-align: center;
+        }
+        #Eventscarousel {
+            width: 90vw;
         }
         .outer {
             margin-left: auto;
