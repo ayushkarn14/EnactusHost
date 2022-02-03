@@ -86,6 +86,10 @@
         animation-duration: 2s;
     }
     
+    .greybg {
+        background-color: #efeeee;
+    }
+    
     #intro {
         width: 350px;
         padding-left: 5%;
@@ -308,13 +312,26 @@
     .achievement_card_img {
         display: block;
         height: 250px;
+        margin: auto auto auto auto;
+    }
+    
+    .achievement_img_border {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #fbd784;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
     
     .achievement_card_caption {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         margin-top: 20px;
-        margin-left: 40px;
         font-weight: bold;
     }
     
@@ -323,8 +340,39 @@
     }
     
     .readmore {
-        color: black;
-        margin-left: 100px;
+        margin: 20px;
+    }
+    
+    #achievement1_more {
+        display: block;
+    }
+    
+    #achievement1_less {
+        display: none;
+    }
+    
+    #achievement2_more {
+        display: block;
+    }
+    
+    #achievement2_less {
+        display: none;
+    }
+    
+    #achievement3_more {
+        display: block;
+    }
+    
+    #achievement3_less {
+        display: none;
+    }
+    
+    #achievement4_more {
+        display: block;
+    }
+    
+    #achievement4_less {
+        display: none;
     }
     
     #carouselExampleControls {
@@ -399,16 +447,21 @@
         margin-left: 50px;
     }
     
+    #readmoreevent {
+        display: block;
+        margin: 0%;
+    }
+    
+    #readlessevent {
+        display: none;
+        margin: 0%;
+    }
+    
     .eventp {
         display: block;
         margin-top: auto;
         margin-bottom: auto;
         width: 500px;
-    }
-    
-    .readmoreevent {
-        color: #fec61b;
-        text-decoration: none;
     }
     
     .outer {
@@ -512,9 +565,10 @@
     }
     
     .asthaimg {
-        width: 200px;
+        width: 165px;
         position: relative;
-        top: -27px;
+        top: -96px;
+        left: 28px;
     }
     
     .divyanshiimg {
@@ -631,9 +685,10 @@
     }
     
     .asthaimg_table {
-        width: 120px;
+        width: 100px;
         position: relative;
-        top: -16px;
+        top: -59px;
+        left: 15px;
     }
     
     .divyanshiimg_table {
@@ -720,7 +775,7 @@
     
     .astha {
         position: relative;
-        top: -70px;
+        top: -112px;
         left: -55px;
     }
     
@@ -902,7 +957,6 @@
         }
         .achievement_card_caption {
             margin-top: 20px;
-            margin-left: 40px;
             font-weight: bold;
         }
         .card-body {
@@ -926,7 +980,7 @@
             font-size: 150%;
         }
         .mehsoos_logo {
-            width: 50%
+            width: 75%
         }
         .mehsoos_des {
             font-size: 80%;
@@ -1054,7 +1108,7 @@
             font-size: 60%;
         }
         .readmore {
-            font-size: 70%;
+            font-size: 90%;
         }
         .projectsp {
             font-size: 70%;
