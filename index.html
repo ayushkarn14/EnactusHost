@@ -63,42 +63,44 @@
         <img src="Assets/banner.jpg" id="banner">
     </div>
     <div class="whitebg">
-        <div id="ourstory" class="container-fluid setheight">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="jumbotron ourjumbo" style="background:transparent">
-                        <div>
-                            <p class="our story">Our Story</p>
-                            <p class="chngtopop storyp"><span class="yellowstory">en</span>trepreneurial</p>
-                            <p class="chngtopop storyp"><span class="yellowstory">act</span>ion for others</p>
-                            <p class="chngtopop storyp">Creates better world for</p>
-                            <p class="chngtopop storyp"><span class="yellowstory">us</span>&nbsp;all</p>
+        <div class="greybg">
+            <div id="ourstory" class="container-fluid setheight">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="jumbotron ourjumbo" style="background:transparent">
+                            <div>
+                                <p class="our story">Our Story</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">en</span>trepreneurial</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">act</span>ion for others</p>
+                                <p class="chngtopop storyp">Creates better world for</p>
+                                <p class="chngtopop storyp"><span class="yellowstory">us</span>&nbsp;all</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm zindexstory">
+                        <div class="storycard" id="animatecard1">
+                            <img src="Assets/story1.png" class="storypic chngtopop">
+                            <p class="visionmission">OUR VISION</p>
+                            <p class="visionmission_des chngtopop">To create a better and more sustainable world.</p>
+                        </div>
+                        <div class="storycard mission" id="animatecard2">
+                            <img src="Assets/story2.png" class="storypic chngtopop">
+                            <p class="visionmission">OUR MISSION</p>
+                            <p class="visionmission_des chngtopop">Engage the next generation of entrepreneurial leaders to use innovation and business principles to improve the world.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm zindexstory">
-                    <div class="storycard" id="animatecard1">
-                        <img src="Assets/story1.png" class="storypic chngtopop">
-                        <p class="visionmission">OUR VISION</p>
-                        <p class="visionmission_des chngtopop">To create a better and more sustainable world.</p>
-                    </div>
-                    <div class="storycard mission" id="animatecard2">
-                        <img src="Assets/story2.png" class="storypic chngtopop">
-                        <p class="visionmission">OUR MISSION</p>
-                        <p class="visionmission_des chngtopop">Engage the next generation of entrepreneurial leaders to use innovation and business principles to improve the world.</p>
-                    </div>
+                <div class="row footerrow">
+                    <footer id="storyfooter" class="container-fluid">
+                        <p id="storyfooterp" class="chngtopop">
+                            We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
+                        </p>
+                    </footer>
                 </div>
             </div>
-            <div class="row footerrow">
-                <footer id="storyfooter" class="container-fluid">
-                    <p id="storyfooterp" class="chngtopop">
-                        We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
-                    </p>
-                </footer>
+            <div class="chngtopop storyfooterm">
+                We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
             </div>
-        </div>
-        <div class="chngtopop storyfooterm">
-            We, at Enactus, endeavor to tap into the entrepreneurial spirit that lives within each of us and channel the unique talents, passions, and ideas we possess to take actions that create a better, more sustainable world for us all.
         </div>
         <div id="achievements" class="container-fluid setheightfit">
             <div class="row">
@@ -113,12 +115,15 @@
                             <div class="carousel-item active">
                                 <div class="carouselcard">
                                     <p class="chngtopop achievement_card_title">PROJECT SAHEJ</p>
-                                    <img src="Assets/achievement1.jpg" class="achievement_card_img">
+                                    <div class="achievement_img_border">
+                                        <img src="Assets/achievement1.png" class="achievement_card_img">
+                                    </div>
                                     <div class="chngtopop achievement_card_caption">November 2019: Project Sahej</div>
 
-                                    <a href="" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" class="readmore">
-                                      Read more
-                                    </a>
+
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement1_more" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement1_less" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
+
 
                                     <div class="collapse" id="collapse1">
                                         <div class="card card-body">
@@ -142,19 +147,19 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="carouselcard">
-                                    <p class="chngtopop achievement_card_title">2nd Position in the Beneficiary Skilling Competition</p>
-                                    <img src="Assets/example.jpg" class="achievement_card_img">
-
-                                    <a href="" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" class="readmore">
-                                      Read more
-                                    </a>
+                                    <p class="chngtopop achievement_card_title">RUNNER UP IN BSC BY ENACTUS INDIA</p>
+                                    <div class="achievement_img_border">
+                                        <img src="Assets/achievement2.png" class="achievement_card_img">
+                                    </div>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement2_more" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement2_less" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
 
                                     <div class="collapse" id="collapse2">
                                         <div class="card card-body">
-                                            Runner Up in a national level competition named as Beneficiary Skilling Competition hosted by Enactus India.
+                                            March 2021: Won second position in a national level competition named as Beneficiary Skilling Competition hosted by Enactus India.
                                             <div class="center">
-                                                <a href="https://www.instagram.com/tv/CMBiLbZAk89/?utm_medium=copy_link">Post Link</a>&nbsp;
-                                                <a href="https://drive.google.com/drive/folders/1Clu-omwkyKgU03XGfJZLeyE95sJETCp1?usp=sharing">Video Link</a>
+                                                <a href="https://www.instagram.com/tv/CMBiLbZAk89/?utm_medium=copy_link"><img src="Assets/instagram.png" style="width: 30px; margin-top: 20px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a href="https://drive.google.com/drive/folders/1Clu-omwkyKgU03XGfJZLeyE95sJETCp1?usp=sharing"><img src="Assets/video.png" style="width: 30px; margin-top: 20px;"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -162,12 +167,12 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="carouselcard">
-                                    <p class="chngtopop achievement_card_title">Enactopedia</p>
-                                    <img src="Assets/Achievement3.jpg" class="achievement_card_img">
-
-                                    <a href="" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample" class="readmore">
-                                      Read more
-                                    </a>
+                                    <p class="chngtopop achievement_card_title">ENACTOPEDIA</p>
+                                    <div class="achievement_img_border">
+                                        <img src="Assets/achievement3.png" class="achievement_card_img">
+                                    </div>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement3_more" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement3_less" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
 
                                     <div class="collapse" id="collapse3">
                                         <div class="card card-body">
@@ -178,12 +183,13 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="carouselcard">
-                                    <p class="chngtopop achievement_card_title">Project Aakaar</p>
-                                    <img src="Assets/achievement4.jpeg" class="achievement_card_img">
+                                    <p class="chngtopop achievement_card_title">PROJECT AAKAAR</p>
+                                    <div class="achievement_img_border">
+                                        <img src="Assets/achievement4.png" class="achievement_card_img">
+                                    </div>
 
-                                    <a href="" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample" class="readmore">
-                                      Read more
-                                    </a>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement4_more" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-light btn-lg chngtopop readmore" id="achievement4_less" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
 
                                     <div class="collapse" id="collapse4">
                                         <div class="card card-body">
@@ -268,10 +274,6 @@
                                 <div class="col-md eventp chngtopop">
                                     Enactus DDUC hosted a two-day "Orientation Programme 2021", wherein we gathered a total audience of 500 students. During the first part of the program which was held under Deeksharambh, our Co-President Akanshi Sharma and Director of Project Execution
                                     Astha, gave insight into the world of Enactus.<br>
-                                    <a href="" data-toggle="collapse" data-target="#collapseevent" aria-expanded="false" aria-controls="collapseExample" class="readmoreevent">
-                                        Read more
-                                      </a>
-
                                     <div class="collapse" id="collapseevent">
                                         <div class="">
                                             On day two, a semi-formal event called 'Alumni Alcove' was held wherein Co-President Nitish Brahma and Director of Research & Development Divyanshi Garg were in conversation with the alumni of Enactus DDUC, Kartik Khatri (Ex-President and founding team
@@ -279,6 +281,10 @@
                                             came together to learn about the rich history of Enactus DDUC and to gain motivation from the ones that have been through college life and have moved on to greater steps on their career paths.
                                         </div>
                                     </div>
+                                </div>
+                                <div class="center" style="margin-top: 20px;">
+                                    <button class="btn btn-warning btn-lg chngtopop readmore" id="readmoreevent" data-toggle="collapse" data-target="#collapseevent" aria-expanded="false" aria-controls="collapseExample" role="button">READ MORE</button>
+                                    <button class="btn btn-warning btn-lg chngtopop readmore" id="readlessevent" data-toggle="collapse" data-target="#collapseevent" aria-expanded="false" aria-controls="collapseExample" role="button">READ LESS</button>
                                 </div>
                             </div>
                         </div>
