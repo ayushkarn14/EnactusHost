@@ -1,6 +1,63 @@
 $('.navbar-nav>li>a').on('click', function() {
     $('.navbar-collapse').collapse('hide');
 });
+
+const btn_more_event = document.getElementById("readmoreevent");
+const btn_less_event = document.getElementById("readlessevent");
+btn_more_event.onclick = function() {
+    btn_more_event.style.display = "none";
+    btn_less_event.style.display = "block";
+};
+btn_less_event.onclick = function() {
+    btn_less_event.style.display = "none";
+    btn_more_event.style.display = "block";
+};
+
+const btn_more1 = document.getElementById("achievement1_more");
+const btn_less1 = document.getElementById("achievement1_less");
+btn_more1.onclick = function() {
+    btn_more1.style.display = "none";
+    btn_less1.style.display = "block";
+};
+btn_less1.onclick = function() {
+    btn_less1.style.display = "none";
+    btn_more1.style.display = "block";
+};
+
+const btn_more2 = document.getElementById("achievement2_more");
+const btn_less2 = document.getElementById("achievement2_less");
+btn_more2.onclick = function() {
+    btn_more2.style.display = "none";
+    btn_less2.style.display = "block";
+};
+btn_less2.onclick = function() {
+    btn_less2.style.display = "none";
+    btn_more2.style.display = "block";
+};
+
+const btn_more3 = document.getElementById("achievement3_more");
+const btn_less3 = document.getElementById("achievement3_less");
+btn_more3.onclick = function() {
+    btn_more3.style.display = "none";
+    btn_less3.style.display = "block";
+};
+btn_less3.onclick = function() {
+    btn_less3.style.display = "none";
+    btn_more3.style.display = "block";
+};
+
+const btn_more4 = document.getElementById("achievement4_more");
+const btn_less4 = document.getElementById("achievement4_less");
+btn_more4.onclick = function() {
+    btn_more4.style.display = "none";
+    btn_less4.style.display = "block";
+};
+btn_less4.onclick = function() {
+    btn_less4.style.display = "none";
+    btn_more4.style.display = "block";
+};
+
+
 var observerhome = new IntersectionObserver(function(entries) {
     if (entries[0].isIntersecting === true) {
         console.log('Home');
