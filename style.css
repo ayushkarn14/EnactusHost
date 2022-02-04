@@ -326,15 +326,6 @@
         margin-right: auto;
     }
     
-    .achievement_card_caption {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        margin-top: 20px;
-        font-weight: bold;
-    }
-    
     .card-body {
         background-color: #fec61b;
     }
@@ -954,10 +945,6 @@
             height: 18vh;
             margin-left: auto;
             margin-right: auto;
-        }
-        .achievement_card_caption {
-            margin-top: 20px;
-            font-weight: bold;
         }
         .card-body {
             font-size: 80%;
