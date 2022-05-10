@@ -160,7 +160,7 @@
     
     .newssubmit {
         margin-left: 25%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
     
     .newspic1 {
@@ -185,6 +185,7 @@
     
     #snsdiv {
         margin-left: 65px;
+        margin-bottom: 70px;
     }
     
     .nav-link:hover {
